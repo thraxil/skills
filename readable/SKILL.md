@@ -15,17 +15,16 @@ all ads, site navigation, and things not relevant to the content. Use
 simple semantic HTML and clean, minimal styles, focusing on being easy
 to read.
 
-## Naming
+## Naming & Structure
 
-Use a meaningful but relatively short name for the resulting file
-based on the article title (or an implied title).
+Use a meaningful but relatively short name based on the article title (or an implied title) to create a new directory. 
+The main article HTML file should be named `index.html` and placed inside this directory.
 
 ## Resources
 
 If there are images relevant to the content (but NOT ads or site
-chrome), download them to a local directory with the same name as the
-html file (minus the extension) with meaningful filenames and link to
-them in the HTML file.
+chrome), download them to a `resources` subdirectory inside the newly created article directory. Give them meaningful filenames and link to
+them in the `index.html` file using relative paths (e.g., `resources/image.jpg`).
 
 If there are other key resources in the article (eg, javascript, video
 files, pdfs, etc) ask the user how they would like them handled.
